@@ -1,0 +1,54 @@
+svg {
+    width: auto;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .outline {
+    fill: none;
+    stroke: #3d3e3f;
+  }
+  
+  body * {
+      stroke: #3d3e3f;
+    cursor: pointer;
+    transition: 800ms ease;
+  }
+  
+  .hand-right,
+  .forearm-right,
+  .arm-right,
+  .hand-left,
+  .forearm-left,
+  .arm-left,
+  .head, 
+  .torso-upper,
+  .torso-lower,
+  .thigh-right,
+  .calf-right,
+  .foot-right,
+  .thigh-left,
+  .calf-left,
+  .foot-left {
+    fill: #fff;
+  }
+  
+  .hand-right:hover,
+  .forearm-right:hover,
+  .arm-right:hover,
+  .hand-left:hover,
+  .forearm-left:hover,
+  .arm-left:hover,
+  .head:hover, 
+  .torso-upper:hover,
+  .torso-lower:hover,
+  .thigh-right:hover,
+  .calf-right:hover,
+  .foot-right:hover,
+  .thigh-left:hover,
+  .calf-left:hover,
+  .foot-left:hover {
+    fill: #3aaaff;
+    stroke: #3aaaff;
+  }

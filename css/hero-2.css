@@ -1,0 +1,178 @@
+.hero-2 {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .circle {
+    border-radius: 50%;
+  }
+  .bordered {
+    border: 4px dashed white;
+  }
+  .circle-center {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+  }
+  .center-image {
+    animation-delay: 0.5s;
+  }
+  .center-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+    font-family: sans-serif;
+  }
+  .text-content {
+    margin-left: 37%;
+    margin-top: 12%;
+    animation-delay: 0.8s;
+  }
+  .center-text p {
+    margin: 0;
+    font-size: 1em;
+  }
+  .circle img {
+    width: 100%;
+  }
+  .circle-round {
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 0% 200% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-round-1 {
+    transform: rotate(0deg) translate(-50%, -50%);
+    animation-delay: 1s;
+  }
+  .circle-round-1 img {
+    transform: rotate(0deg)
+  }
+  .circle-round-2 {
+    transform: rotate(60deg) translate(-50%, -50%);
+    animation-delay: 1.2s;
+  }
+  .circle-round-2 img {
+    transform: rotate(-60deg)
+  }
+  .circle-round-3 {
+    transform: rotate(120deg) translate(-50%, -50%);
+    animation-delay: 1.4s;
+  }
+  .circle-round-3 img {
+    transform: rotate(-120deg)
+  }
+  .circle-round-4 {
+    transform: rotate(180deg) translate(-50%, -50%);
+    animation-delay: 1.6s;
+  }
+  .circle-round-4 img {
+    transform: rotate(-180deg)
+  }
+  .circle-round-5 {
+    transform: rotate(240deg) translate(-50%, -50%);
+    animation-delay: 1.8s;
+  }
+  .circle-round-5 img {
+    transform: rotate(-240deg)
+  }
+  .circle-round-6 {
+    transform: rotate(300deg) translate(-50%, -50%);
+    animation-delay: 2s;
+  }
+  .circle-round-6 img {
+    transform: rotate(-300deg)
+  }
+  .circle-round-overlay {
+    position: absolute;
+    background-color: transparent;
+    width: 33%;
+    height: 33%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 0% 153% 0;
+  }
+  .circle-round-overlay::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid #ffff00;
+    border-right: 2px solid transparent;
+    z-index: 1;
+    visibility: hidden;
+    animation: transformation-rotate 3s linear 3s infinite;
+  }
+  .circle-round-overlay::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid white;
+    z-index: 1;
+    visibility: hidden;
+    animation: transformation-rotate 5s linear 3s infinite;
+  }
+  .circle-round-1-rotate {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  .circle-round-2-rotate {
+    transform: rotate(60deg) translate(-50%, -50%);
+  }
+  .circle-round-3-rotate {
+    transform: rotate(120deg) translate(-50%, -50%);
+  }
+  .circle-round-4-rotate {
+    transform: rotate(180deg) translate(-50%, -50%);
+  }
+  .circle-round-5-rotate {
+    transform: rotate(240deg) translate(-50%, -50%);
+  }
+  .circle-round-6-rotate {
+    transform: rotate(300deg) translate(-50%, -50%);
+  }
+  @keyframes transformation-rotate {
+    0% {
+      visibility: visible;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

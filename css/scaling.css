@@ -1,0 +1,10 @@
+/* @media (min-width:1000px) and (min-resolution: 120dpi) and (max-resolution: 140dpi){
+	header, section, .container {
+		zoom: 0.9;
+	}
+}
+@media (min-width:1000px) and (min-resolution: 140dpi) {
+	header, section, .container {
+		zoom: 0.8;
+	}
+}  */

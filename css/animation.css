@@ -1,0 +1,105 @@
+.hero {
+  width: 800px;
+  height: 800px;
+  z-index: 333;
+  margin: auto;
+  padding: 0;
+  align-content: center;
+  border-radius: 50%;
+  background-color: #ebf2f9;
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s transform ease-in-out;
+}
+
+.hero.hero-2 {
+  background-color: unset;
+}
+
+.hero img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  transition: 0.2s transform ease-in-out;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    width: 760px;
+    height: 760px;
+  }
+}
+
+
+@media (max-width: 760px) {
+  .hero {
+    width: 576px;
+    height: 576px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .hero {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    width: 288px;
+    height: 288px;
+  }
+}
+
+@keyframes slideInLeftHide {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: hidden;
+  }
+}
+
+@keyframes slideInLeftHideLong {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: hidden;
+  }
+}
+
+@keyframes slideInRightHide {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: hidden;
+  }
+}
+
+@keyframes delayShow {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: visible;
+  }
+}

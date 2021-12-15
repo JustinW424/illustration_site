@@ -1,0 +1,370 @@
+@keyframes slideInRight2 {
+    0% {
+      left: 100%;
+      transform: scale(1) translateY(0);
+    }
+    25% {
+      left: 70%;
+      transform: scale(1.1) translateY(30%);
+    }
+    50% {
+      left: 40%;
+      transform: scale(0.9) translateY(-30%);
+    }
+    75% {
+      left: 10%;
+      transform: scale(1.1) translateY(30%);
+    }
+    100% {
+      left: -20%;
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  @keyframes rubberBand {
+    0% {
+      transform: scale3d(1, 1, 1) skewX(0deg);
+      transform-origin: bottom;
+    }
+    90% {
+      transform: scale3d(1, 1, 1) skewX(0deg);
+      transform-origin: bottom;
+    }
+    93% {
+      transform: scale3d(0.997, 1.003, 1) skewX(0.1deg);
+      transform-origin: bottom;
+    }
+    94% {
+      transform: scale3d(0.995, 1.005, 1) skewX(-0.1deg);
+      transform-origin: bottom;
+    }
+    95% {
+      transform: scale3d(0.993, 1.003, 1) skewX(0.1deg);
+      transform-origin: bottom;
+    }
+    96.5% {
+      transform: scale3d(0.995, 1.005, 1) skewX(-0.1deg);
+      transform-origin: bottom;
+    }
+    97.5% {
+      transform: scale3d(0.998, 1.003, 1) skewX(0.1deg);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scale3d(1, 1, 1) skewX(0deg);
+      transform-origin: bottom;
+    }
+  }
+  
+  @keyframes flipOutLeft {
+    0% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: right;
+      visibility: visible;
+    }
+    12% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: right;
+      visibility: visible;
+    }
+    50% {
+      transform: perspective(4000px) rotate3d(0.1, 1, 0.1, 30deg);
+      transform-origin: right;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes flipOutRight {
+    0% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: left;
+      visibility: visible;
+    }
+    12% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: left;
+      visibility: visible;
+    }
+    50% {
+      transform: perspective(4000px) rotate3d(-0.1, 1, -0.1, 30deg);
+      transform-origin: left;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes flipOutYLeft {
+    0% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: right;
+      visibility: visible;
+    }
+    12% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: right;
+      visibility: visible;
+    }
+    50% {
+      transform: perspective(4000px) rotate3d(-0.3, 1, -0.03, 35deg);
+      transform-origin: right;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes flipOutYRight {
+    0% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: left;
+      visibility: visible;
+    }
+    12% {
+      transform: perspective(4000px) rotate3d(0, 0, 0, 0deg);
+      transform-origin: left;
+      visibility: visible;
+    }
+    50% {
+      transform: perspective(4000px) rotate3d(0.3, 1, -0.03, 35deg);
+      transform-origin: left;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes rotateInDownLeft {
+    0% {
+      transform: none;
+      visibility: visible;
+      transform-origin: 90% 40% 0;
+    }
+    50% {
+      transform: rotate3d(0, 0, 1, -60deg);
+      visibility: visible;
+      transform-origin: 90% 40% 0;
+    }
+    51% {
+      transform: rotate3d(0, 0, 1, -60deg);
+      transform-origin: 90% 40% 0;
+      visibility: visible;
+    }
+    100% {
+      transform: none;
+      transform-origin: 90% 40% 0;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes rotateInDownRight {
+    0% {
+      transform: none;
+      visibility: visible;
+      transform-origin: 10% 40% 0;
+    }
+    50% {
+      transform: rotate3d(0, 0, 1, 60deg);
+      visibility: visible;
+      transform-origin: 10% 40% 0;
+    }
+    51% {
+      transform: rotate3d(0, 0, 1, 60deg);
+      transform-origin: 10% 40% 0;
+      visibility: visible;
+    }
+    100% {
+      transform: none;
+      transform-origin: 10% 40% 0;
+      visibility: visible;
+    }
+  }
+  
+  .hero-3 .cloud-m {
+    width: 20%;
+    height: auto;
+    top: 6.67%;
+    left: 46.67%;
+    animation: slideInRight2 25s linear -9s normal infinite;
+  }
+  .hero-3 .cloud-l {
+    width: 16%;
+    height: auto;
+    top: 23.33%;
+    left: 43.33%;
+    animation: slideInRight2 30s linear -15s normal infinite;
+  }
+  .hero-3 .cloud-r {
+    width: 12%;
+    height: auto;
+    top: 16.67%;
+    left: 73.33%;
+    animation: slideInRight2 20s linear -2s normal infinite;
+  }
+  .hero-3 .tree-l {
+    width: 55%;
+    height: auto;
+    top: 2.67%;
+    left: -10%;
+    animation: rubberBand 20s ease-in-out -15s normal infinite;
+  }
+  .hero-3 .tree-r {
+    width: 25%;
+    height: auto;
+    top: 21.67%;
+    left: 60%;
+    animation: rubberBand 25s ease-in-out -18s normal infinite;
+  }
+  .hero-3 .bench {
+    width: 20%;
+    height: auto;
+    top: 37.67%;
+    left: 55.33%;
+  }
+  .hero-3 .plant {
+    width: 170%;
+    height: auto;
+    top: 43.33%;
+    left: 0;
+  }
+  .hero-3 .bottom {
+    width: 350%;
+    height: auto;
+    top: 70%;
+    left: -216.67%;
+  }
+  
+  .hero-3 .gm {
+    width: 51.67%;
+    height: auto;
+    top: 43.5%;
+    left: 24%;
+    animation: slideInLeftHideLong 0.8s ease-out 0s normal forwards;
+  }
+  .hero-3 .gm-k {
+    width: 30%;
+    height: auto;
+    top: 95%;
+    left: 35%;
+  }
+  .hero-3 .gm-b {
+    width: 16%;
+    height: auto;
+    top: 55%;
+    left: 41.67%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 0.8s normal forwards;
+  }
+  .hero-3 .gm-h {
+    width: 6.7%;
+    height: auto;
+    top: 43%;
+    left: 46.33%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 0.8s normal forwards;
+  }
+  .hero-3 .gm-p-l {
+    width: 23.5%;
+    height: auto;
+    top: 55.17%;
+    left: 23.5%;
+    visibility: hidden;
+    animation: flipOutYLeft 5s linear 0.8s forwards infinite;
+  }
+  .hero-3 .gm-p-r {
+    width: 23.5%;
+    height: auto;
+    top: 55.17%;
+    left: 52.5%;
+    visibility: hidden;
+    animation: flipOutYRight 5s linear 0.8s forwards infinite;
+  }
+  
+  .hero-3 .gf {
+    width: 51%;
+    height: auto;
+    top: 24.5%;
+    left: -10.77%;
+    visibility: hidden;
+    animation: slideInLeftHide 0.5s ease-out 0.5s normal forwards;
+  }
+  .hero-3 .gf-k {
+    width: 30%;
+    height: auto;
+    top: 78.33%;
+    left: 1.67%;
+  }
+  .hero-3 .gf-b {
+    width: 16%;
+    height: auto;
+    top: 33.33%;
+    left: 6.67%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 1s normal forwards;
+  }
+  .hero-3 .gf-h {
+    width: 7%;
+    height: auto;
+    top: 24.5%;
+    left: 11.17%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 1s normal forwards;
+  }
+  .hero-3 .gf-p-l {
+    width: 23.5%;
+    height: auto;
+    top: 33.6%;
+    left: -11.5%;
+    visibility: hidden;
+    animation: flipOutLeft 5s linear 1s forwards infinite;
+  }
+  .hero-3 .gf-p-r {
+    width: 23.5%;
+    height: auto;
+    top: 33.6%;
+    left: 17.5%;
+    visibility: hidden;
+    animation: flipOutRight 5s linear 1s forwards infinite;
+  }
+  
+  .hero-3 .women {
+    width: 50.5%;
+    height: auto;
+    top: 25%;
+    left: 61%;
+    visibility: hidden;
+    animation: slideInRightHide 0.5s ease-out 0.8s normal forwards;
+  }
+  .hero-3 .women-k {
+    width: 30%;
+    height: auto;
+    top: 76.67%;
+    left: 70%;
+  }
+  .hero-3 .women-b {
+    width: 16%;
+    height: auto;
+    top: 35.33%;
+    left: 78.16%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 1.3s normal forwards;
+  }
+  .hero-3 .women-h {
+    width: 10%;
+    height: auto;
+    top: 24.5%;
+    left: 81%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 1.3s normal forwards;
+  }
+  .hero-3 .w-p-l {
+    width: 25%;
+    height: auto;
+    top: 35.5%;
+    left: 60%;
+    visibility: hidden;
+    animation: rotateInDownLeft 5s linear 1.3s forwards infinite;
+  }
+  .hero-3 .w-p-r {
+    width: 25%;
+    height: auto;
+    top: 35.5%;
+    left: 87.5%;
+    visibility: hidden;
+    animation: rotateInDownRight 5s linear 1.3s forwards infinite;
+  }
+  

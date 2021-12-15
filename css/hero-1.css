@@ -1,0 +1,377 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      visibility: visible;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+      opacity: 1;
+      visibility: hidden;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes hairEffect {
+    0% {
+      visibility: visible;
+    }
+    20% {
+      visibility: visible;
+      transform: rotate(0deg);
+    }
+    45% {
+      transform: rotate(3deg);
+      transform-origin: top;
+      visibility: visible;
+    }
+    50% {
+      transform: rotate(3deg);
+      transform-origin: top;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes womenSpeakEffect {
+    0% {
+      visibility: visible;
+    }
+    39% {
+      transform: scale3d(1, 1, 1);
+    }
+    40% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    41% {
+      transform: scale3d(1, 1, 1);
+    }
+    42% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    43% {
+      transform: scale3d(1, 1, 1);
+    }
+    44% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    45% {
+      transform: scale3d(1, 1, 1);
+    }
+    46% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    47% {
+      transform: scale3d(1, 1, 1);
+    }
+    48% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    49% {
+      transform: scale3d(1, 1, 1);
+    }
+    49.5% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      transform: scale3d(1, 1, 1);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+      visibility: visible;
+    }
+    50% {
+      -webkit-transform: scale3d(1.3, 1.3, 1.3);
+      transform: scale3d(1.3, 1.3, 1.3);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes search {
+    0% {
+      visibility: visible;
+    }
+    10% {
+      transform: translate(2%, 2%);
+      visibility: visible;
+    }
+    20% {
+      transform: translate(4%, 4%);
+      visibility: visible;
+    }
+    30% {
+      transform: translate(6%, 4%);
+      visibility: visible;
+    }
+    40% {
+      transform: translate(8%, 2%);
+      visibility: visible;
+    }
+    50% {
+      transform: translate(10%, 0%);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes headEffect {
+    0% {
+      visibility: visible;
+      transform-origin: bottom;
+    }
+    42% {
+      transform: rotate(0deg);
+    }
+    44% {
+      transform: rotate(.3deg);
+    }
+    48% {
+      transform: rotate(-.3deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes manSpeakEffect {
+    0% {
+      visibility: visible;
+    }
+    1% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    2% {
+      transform: scale3d(1, 1, 1);
+    }
+    3% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    4% {
+      transform: scale3d(1, 1, 1);
+    }
+    5% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    6% {
+      transform: scale3d(1, 1, 1);
+    }
+    7% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    8% {
+      transform: scale3d(1, 1, 1);
+    }
+    9% {
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    10% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes flipInX {
+    0% {    
+      visibility: visible;
+    }
+    30% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -8deg);
+    }
+    40% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 3deg);
+    }
+    45% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -3deg);
+    }
+    50% {
+      transform: perspective(400px);
+    }
+  }
+  
+  .hero-1 .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../assets/img/background.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: initial;
+  }
+  
+  .hero-1 .body {
+    width: 90%;
+    height: auto;
+    top: 8.125%;
+    right: -13.125%;
+    visibility: hidden;
+    animation: slideInRight 0.2s linear 0s normal forwards;
+  }
+  
+  .hero-1 .red-point {
+    width: 3.125%;
+    height: auto;
+    top: 13.375%;
+    right: 49.25%;
+    visibility: hidden;
+    animation: zoomInOut 3s linear 0.5s normal infinite;
+  }
+  
+  .hero-1 .red-point:nth-child(3) {
+    top: 29%;
+    right: 47.125%;
+    visibility: hidden;
+    animation: zoomInOut 3s linear 0.7s normal infinite;
+  }
+  
+  .hero-1 .red-point:nth-child(4) {
+    top: 39.875%;
+    right: 54.125%;
+    visibility: hidden;
+    animation: zoomInOut 3s linear 0.9s normal infinite;
+  }
+  
+  .hero-1 .red-point:nth-child(5) {
+    top: 55.25%;
+    right: 45.375%;
+    visibility: hidden;
+    animation: zoomInOut 3s linear 1.1s normal infinite;
+  }
+  
+  .hero-1 .lens {
+    width: 75%;
+    height: auto;
+    top: 2.5%;
+    left: -2.5%;
+    visibility: hidden;
+    animation: fadeIn 0.3s linear 0.2s normal forwards;
+  }
+  
+  .hero-1 .lens-2 {
+    width: 75%;
+    height: auto;
+    top: 2.5%;
+    left: -2.5%;
+    visibility: hidden;
+    animation: search 3s linear 0.5s normal infinite;
+  }
+  
+  .hero-1 .medicine {
+    width: 30.625%;
+    height: auto;
+    top: 53.125%;
+    left: 1.5%;
+    visibility: hidden;
+    animation: slideInLeft 0.2s linear 0.3s normal forwards;
+  }
+  
+  .hero-1 .man {
+    width: 31.75%;
+    height: auto;
+    top: 15.5%;
+    right: 17.75%;
+    visibility: hidden;
+    animation: slideInRightHide 0.3s ease-out 1.8s normal forwards;
+  }
+  
+  .hero-1 .man-b {
+    width: 31.75%;
+    height: auto;
+    top: 27.375%;
+    right: 17.75%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 2.1s normal forwards;
+  }
+  
+  .hero-1 .man-h {
+    width: 10%;
+    height: auto;
+    top: 15.625%;
+    right: 26%;
+    visibility: hidden;
+    animation: headEffect 10s linear 2.1s normal infinite;
+  }
+  
+  .hero-1 .man-m {
+    width: 4%;
+    height: auto;
+    top: 24%;
+    right: 33.5%;
+    visibility: hidden;
+    animation: manSpeakEffect 10s linear 2.1s normal infinite;
+  }
+  
+  .hero-1 .man-d {
+    width: 15.75%;
+    height: auto;
+    top: 39.625%;
+    right: 30.125%;
+    visibility: hidden;
+    animation: flipInX 5s ease-out 2.1s normal infinite;
+  }
+  
+  .hero-1 .women {
+    width: 35%;
+    height: auto;
+    top: 17.25%;
+    left: 17.5%;
+    visibility: hidden;
+    animation: slideInLeftHide 0.8s ease-out 1s normal forwards;
+  }
+  
+  .hero-1 .women-b {
+    width: 35%;
+    height: auto;
+    top: 19.625%;
+    left: 17.5%;
+    visibility: hidden;
+    animation: delayShow 0.1s linear 1.8s normal forwards;
+  }
+  
+  .hero-1 .women-h {
+    width: 19%;
+    height: auto;
+    top: 17.25%;
+    left: 24.5%;
+    visibility: hidden;
+    animation: hairEffect 10s linear 1.8s normal infinite;
+  }
+  
+  .hero-1 .women-m {
+    width: 2.25%;
+    height: auto;
+    top: 26.375%;
+    left: 35%;
+    visibility: hidden;
+    animation: womenSpeakEffect 10s linear 1.8s normal infinite;
+  }
